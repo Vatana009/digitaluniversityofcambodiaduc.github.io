@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUC Student System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DIGITAL UNIVERSITY OF CAMBODIA</h1>
+    </header>
+
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div class="stats">
+              <div>Total Students: <span id="total-students">0</span></div>
+            </div>
+        </section>
+
+        <section id="add-student">
+            <h2>Add Student</h2>
+            <form id="student-form">
+              <label for="name">Name:</label>
+              <input type="text" id="name" required>
+              <label for="id">ID:</label>
+              <input type="text" id="id" required>
+                <label for="gender">Gender:</label>
+                <input type="text" id="gender" required>
+                <label for="classes">Class:</label>
+                <input type="text" id="classes" required>
+                <button type="submit">Add Student</button>
+            </form>
+        </section>
+
+        <section id="students">
+            <h2>Student List</h2>
+            <table id="student-table">
+                <thead>
+                    <tr>
+                        <th style="width: 10%;">Numbering</th>
+                        <th>Full Name</th>
+                        <th>ID</th>
+                        <th>Gender</th>
+                        <th>Class</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamically generated rows -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Digital University of Cambodia ( DUC )</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
